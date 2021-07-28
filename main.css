@@ -1,3 +1,12 @@
 body {
   color: green;
 }
+
+
+html {
+    background: url(../pictures/fuzzy_lights.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
