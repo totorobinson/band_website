@@ -2,7 +2,7 @@
 body {
   color: green;
 }
-
+    */
 
 html {
     background: url(pictures/fuzzy_lights.jpg) no-repeat center center fixed;
@@ -11,4 +11,4 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-    */
+    
