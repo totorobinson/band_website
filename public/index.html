@@ -1,31 +1,39 @@
 <html>
-  <head>
+
+
+
+<head>
     <link href="normalize.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <title>Jack and the Fun Guys</title>
 
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             padding: 0;
             border: 0;
         }
+
         .margin {
             margin: 75% 0;
         }
+
         .parallax {
             background: url(pictures/tony_and_casey.JPG) repeat fixed 1%;
         }
+
         .parallax-inner {
             padding-top: 30%;
             padding-bottom: 30%;
         }
-        h1{
+
+        h1 {
             text-align: center;
             font-size: 500%;
             color: #ffffff;
             letter-spacing: 3px;
         }
+
         .parallax2 {
             background: url(pictures/where_jack.jpg) repeat fixed 10000%;
             width: auto;
@@ -36,6 +44,7 @@
             padding-top: 30%;
             padding-bottom: 30%;
         }
+
         h2 {
             text-align: center;
             font-size: 500%;
@@ -45,7 +54,7 @@
 
         .parallax3 {
             background: url(pictures/josh_drum.JPG) repeat fixed 10000%;
-            width: 100%;
+            width: auto;
             height: 100%;
         }
 
@@ -73,43 +82,218 @@
             /* border-block-start-width: 5px;*/
         }
 
+
+
+        .navigation {
+            position: relative;
+            margin-top: 22px;
+            margin-left: 22px;
+            width: 50px;
+            height: 50px;
+            background: #ffffff;
+            transition: width 0.5s, height 0.5s;
+            transition-delay: 0s, 0.75s;
+            z-index: 100000;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+            .navigation.active {
+                width: 250px;
+                height: 350px;
+                transition: height 0.5s, width 0.5s;
+                transition-delay: 0s, 0.75s;
+            }
+
+
+            .navigation .toggle {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background: #ff00dc;
+                transition: 0.5s;
+            }
+
+
+            .navigation .toggle.active {
+                background: blue;
+            }
+
+
+            .navigation .toggle::before {
+                content: '+';
+                position: absolute;
+                font-size: 2em;
+                display: flex;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                color: #ffffff;
+                font-weight: 400;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+
+            .navigation .toggle.active::before {
+                transform: rotate(360deg);
+            }
+
+            .navigation ul {
+                position: absolute;
+                left: 0;
+                width: 100%;
+            }
+
+            .navigation ul li {
+                position: relative;
+                list-style: none;
+                width: 100%;
+            }
+
+            .navigation ul li:hover {
+                background: deepskyblue
+            }
+
+            .navigation ul li a {
+                position: relative;
+                display: block;
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                color: #2bdc60;
+            }
+
+
+
+
+
+
+            .navigation ul li a .title {
+                position: relative;
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                text-align: start;
+                white-space: nowrap;
+            }
+
+            .navigation ul {
+                position: absolute;
+                left: 0;
+                width: 100%;
+            }
+
+                .navigation ul li {
+                    position: relative;
+                    list-style: none;
+                    width: 100%;
+                }
+
+                .navigation ul li:hover {
+                    background: deepskyblue
+                }
+
+                    .navigation ul li a {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        display: flex;
+                        font-family: 'Arial';
+                        margin-left: 22px;
+                        color: #2bdc60;
+                    }
+
+                
+                .navigation ul li a .title {
+                    position: relative;
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: start;
+                    white-space: nowrap;
+                }
     </style>
-
-  </head>
-
-
-  <body>
+</head>
 
 
+<body>
+
+
+    <div class="navigation active">
+        <div class="toggle"></div>
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="title">Home</span>
+
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/jackandthefun_guys/?hl=en" target="_blank">
+                    <span class="title">Instagram</span>
+
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="title">Gallery</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="title">Events</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const navigation = document.querySelector('.navigation')
+            ;
+        document.querySelector('.toggle').onclick = function () {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active')
+        }
+
+    </script>
+
+
+    <div class="margin"></div>
+    <section class="parallax">
+        <div class="parallax-inner">
+            <h1>JACK AND THE FUN GUYS</h1>
+
+        </div>
+    </section>
+    <section class="parallax2">
+        <div class="parallax2-inner">
+            <h2>INFORMATION</h2>
+
+        </div>
+    </section>
+    <section class="parallax3">
+        <div class="parallax3-inner">
+            <h3>HEHE</h3>
+
+        </div>
+    </section>
+
+
+    <div class="margin"></div>
 
 
 
-      <div class="margin"></div>
-      <section class="parallax">
-          <div class="parallax-inner">
-              <h1>JACK AND THE FUN GUYS</h1>
-
-          </div>
-      </section>
-      <section class="parallax2">
-          <div class="parallax2-inner">
-              <h2>INFORMATION</h2>
-
-          </div>
-      </section>
-      <section class="parallax3">
-          <div class="parallax3-inner">
-              <h3>HEHE</h3>
-
-          </div>
-      </section>
 
 
-      <div class="margin"></div>
-
-
-
-
-
-  </body>
+</body>
 </html>
