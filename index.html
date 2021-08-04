@@ -85,9 +85,12 @@
 
 
         .navigation {
-            position: relative;
-            margin-top: 22px;
-            margin-left: 22px;
+            position: fixed;
+            /*top: 0;*/
+            bottom: 10px;
+            right: 10px;
+            /*margin-top: 22px;
+            margin-left: 22px;*/
             width: 50px;
             height: 50px;
             background: #ffffff;
@@ -100,7 +103,7 @@
 
             .navigation.active {
                 width: 250px;
-                height: 350px;
+                height: 300px;
                 transition: height 0.5s, width 0.5s;
                 transition-delay: 0s, 0.75s;
             }
