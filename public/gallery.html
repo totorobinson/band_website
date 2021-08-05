@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+
     <meta charset="UTF-8">
-    
+
     <title>GALLERY</title>
 
     <style type="text/css">
@@ -11,22 +14,21 @@
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
-            
         }
 
 
-        input{
+        input {
             display: none;
         }
 
-        .container{
+        .container {
             width: 100%;
             text-align: center;
         }
 
 
 
-        h1{
+        h1 {
             font-weight: 600;
             font-size: 35px;
             position: relative;
@@ -40,17 +42,17 @@
             margin: 40px 0;
         }
 
-        h2::before {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 5px;
-            background-color: deepskyblue;
-            top: -35px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: animate 4s linear infinite;
-        }
+            h2::before {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 5px;
+                background-color: deepskyblue;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: animate 4s linear infinite;
+            }
 
         h1::before {
             content: '';
@@ -64,14 +66,16 @@
             animation: animate 4s linear infinite;
         }
 
-        @keyframes animate{
-            0%{
+        @keyframes animate {
+            0% {
                 width: 50px;
             }
-            50%{
+
+            50% {
                 width: 185px;
             }
-            100%{
+
+            100% {
                 width: 50px;
             }
         }
@@ -95,51 +99,51 @@
         }
 
 
-        .pic img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            transition: .5s;
-        }
+            .pic img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                transition: .5s;
+            }
 
-        .pic::before {
-            content: "";
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-            width: 100%;
-            margin-top: -100px;
-            opacity: 0;
-            transition: .3s;
-            transition-delay: .2s;
-            z-index: 1;
-        }
+            .pic::before {
+                content: "";
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 22px;
+                font-weight: bold;
+                width: 100%;
+                margin-top: -100px;
+                opacity: 0;
+                transition: .3s;
+                transition-delay: .2s;
+                z-index: 1;
+            }
 
-        .pic:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            border-radius: 10px;
-            height: 0;
-            background-color: rgba(0,0,0,.1);
-            transition: .3s;
-        }
+            .pic:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                border-radius: 10px;
+                height: 0;
+                background-color: rgba(0,0,0,.1);
+                transition: .3s;
+            }
 
-        .pic:hover::after {
-            height: 100%;
-        }
+            .pic:hover::after {
+                height: 100%;
+            }
 
-        .pic:hover::before {
-            margin-top: 0;
-            opacity: 1;
-        }
+            .pic:hover::before {
+                margin-top: 0;
+                opacity: 1;
+            }
     </style>
 
 
@@ -155,16 +159,20 @@
 
     <div class="photo-gallery">
         <div class="pic vic ">
-            <img src="pictures/victor.JPG" />
+
+
+
+            <a href="pictures/victor.JPG"><img src="pictures/victor.JPG"></a>
+
         </div>
         <div class="pic tony_casey">
-            <img src="pictures/tony_and_casey.jpg" />
+            <img src="pictures/tony_and_casey.JPG" />
         </div>
         <div class="pic setup">
-            <img src="pictures/setup.jpg" />
+            <img src="pictures/setup.JPG" />
         </div>
         <div class="pic landon">
-            <img src="pictures/landon.jpg" />
+            <img src="pictures/landon.JPG" />
         </div>
         <div class="pic crowd1">
             <img src="pictures/crowd.jpg" />
