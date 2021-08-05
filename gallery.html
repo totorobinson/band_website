@@ -1,1 +1,108 @@
-Put pictures in here!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .photo-gallery {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .pic {
+            position: relative;
+            height: 230px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px lightgray;
+            cursor: pointer;
+        }
+
+
+        .pic img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: .5s;
+        }
+
+        .pic::before {
+            content: "";
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: -100px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s;
+            z-index: 1;
+        }
+
+        .pic:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border-radius: 10px;
+            height: 0;
+            background-color: rgba(0,0,0,.1);
+            transition: .3s;
+        }
+
+        .pic:hover::after {
+            height: 100%;
+        }
+
+        .pic:hover::before {
+            margin-top: 0;
+            opacity: 1;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="photo-gallery">
+        <div class="pic wheres_jack">
+            <img src="pictures/where_jack.jpg" />
+        </div>
+        <div class="pic tony_casey">
+            <img src="pictures/tony_and_casey.jpg" />
+        </div>
+        <div class="pic setup">
+            <img src="pictures/setup.jpg" />
+        </div>
+        <div class="pic landon">
+            <img src="pictures/landon.jpg" />
+        </div>
+        <div class="pic crowd1">
+            <img src="pictures/crowd.jpg" />
+        </div>
+        <div class="pic fuz">
+            <img src="pictures/fuzzy_lights.jpg" />
+        </div>
+    </div>
+
+
+</body>
+</html>
