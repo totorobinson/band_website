@@ -11,7 +11,73 @@
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
+            
         }
+
+
+        input{
+            display: none;
+        }
+
+        .container{
+            width: 100%;
+            text-align: center;
+        }
+
+
+
+
+        h1{
+            font-weight: 600;
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+        }
+
+            h2::before {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 5px;
+                background-color: deepskyblue;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: animate 4s linear infinite;
+            }
+
+            h1::before {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 5px;
+                background-color: deepskyblue;
+                top: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: animate 4s linear infinite;
+            }
+
+        @keyframes animate{
+            0%{
+                width: 50px;
+            }
+            50%{
+                width: 185px;
+            }
+            100%{
+                width: 50px;
+            }
+        }
+
+
 
         .photo-gallery {
             width: 95%;
@@ -81,6 +147,12 @@
 
 </head>
 <body>
+
+    <div class="container">
+        <h1>PICTURES!</h1>
+        <h2></h2>
+    </div>
+
 
     <div class="photo-gallery">
         <div class="pic wheres_jack">
