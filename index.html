@@ -20,6 +20,7 @@
 
         .parallax {
             background: url(pictures/tony_and_casey.JPG) repeat fixed 1%;
+            background-size: 300px 300px;
         }
 
         .parallax-inner {
@@ -33,9 +34,10 @@
             color: #ffffff;
             letter-spacing: 3px;
         }
-
+         
         .parallax2 {
             background: url(pictures/where_jack.jpg) repeat fixed 10000%;
+            background-size: 300px 200px;
             width: auto;
             height: 100%;
         }
@@ -174,9 +176,6 @@
 
 
 
-
-
-
             .navigation ul li a .title {
                 position: relative;
                 display: block;
@@ -264,7 +263,7 @@
     <script>
         const navigation = document.querySelector('.navigation')
             ;
-        document.querySelector('.toggle').onclick = function () {
+        document.querySelector('.toggle').onclick = function() {
             this.classList.toggle('active');
             navigation.classList.toggle('active')
         }
