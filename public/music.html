@@ -6,95 +6,93 @@
 
     <meta charset="UTF-8">
 
-    <title>CONTACT</title>
+    <title>MUSIC</title>
 
     <style type="text/css">
-         * {
-             margin: 5000px, 0px;
-             padding: 0;
-             box-sizing: border-box;
-             font-family: sans-serif;
-         }
-
-
-         input {
-             display: none;
-         }
-
-         .container {
-             width: 100%;
-             text-align: center;
-         }
-
-         .container {
-             width: 100%;
-         }
-
-         h3 {
-             font-family: "Helvetica Neue", "Arial", sans-serif;
-             font-weight: 900;
-             font-size: 20px;
-             position: relative;
-             margin: 40px 0;
-         }
-
-
-         h1 {
-             font-family: "Helvetica Neue", "Arial", sans-serif;
-             font-weight: 600;
-             font-size: 35px;
-             position: relative;
-             margin: 40px 0;
-         }
-
-         h2 {
-             font-weight: 600;
-             font-size: 35px;
-             position: relative;
-             margin: 40px 0;
-         }
-
-             h2::before {
-                 content: '';
-                 position: absolute;
-                 width: 100px;
-                 height: 5px;
-                 background-color: deepskyblue;
-                 top: -35px;
-                 left: 50%;
-                 transform: translateX(-50%);
-                 animation: animate 4s linear infinite;
-             }
-
-         h1::before {
-             content: '';
-             position: absolute;
-             width: 100px;
-             height: 5px;
-             background-color: deepskyblue;
-             top: -15px;
-             left: 50%;
-             transform: translateX(-50%);
-             animation: animate 4s linear infinite;
-         }
-
-         @keyframes animate {
-             0% {
-                 width: 50px;
-             }
-
-             50% {
-                 width: 185px;
-             }
-
-             100% {
-                 width: 50px;
-             }
-         }
-
-        h4 {
-
+        * {
+            margin: 5000px, 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
         }
+
+
+        input {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+
+
+        h3 {
+            font-family: "Helvetica Neue", "Arial", sans-serif;
+            font-weight: 900;
+            font-size: 20px;
+            position: relative;
+            margin: 40px 0;
+        }
+
+
+        h1 {
+            font-family: "Helvetica Neue", "Arial", sans-serif;
+            font-weight: 600;
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+        }
+
+            h2::before {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 5px;
+                background-color: deepskyblue;
+                top: -35px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: animate 4s linear infinite;
+            }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            background-color: deepskyblue;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                width: 50px;
+            }
+
+            50% {
+                width: 185px;
+            }
+
+            100% {
+                width: 50px;
+            }
+        }
+
 
         .center {
             display: block;
@@ -106,6 +104,19 @@
 
 
 
+        ul {
+            list-style: none; /* Remove default bullets */
+        }
+
+            ul li::before {
+                content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: deepskyblue; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1em; /* Also needed for space (tweak if needed) */
+                margin-left: -1em; /* Also needed for space (tweak if needed) */
+                font-size: 2em;
+            }
     </style>
 
 
@@ -127,15 +138,26 @@
         <h2></h2>
     </div>
 
+    <br>
+    <br>
 
 
-    <ul class="list">
-        <li class="list-item one">Slip Away</li>
-        <li class="list-item two">Country Song</li>
-        <li class="list-item three">We Don't Surf</li>
-        <li class="list-item four">Slam Poetry</li>
-        <li class="list-item five">The Freezing Rain</li>
-        <li class="list-item six">Out of Her Way</li>
+    <ul>
+        <li>
+            <a href="https://soundcloud.com/user-643226863/jack-the-fun-guys-slip-away?ref=clipboard&p=i&c=0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                <span class="title">Slip Away</span>
+            </a>
+        </li>
+        <li>Country Song</li>
+        <li>We Don't Surf</li>
+        <li>Slam Poetry</li>
+        <li>
+            <a href="https://soundcloud.app.goo.gl/VCFUqLwr73JD3ShH6" target="_blank">
+                <span class="title">The Freezing Rain</span>
+            </a>
+        </li>
+
+        <li>Out of Her Way</li>
     </ul>
 
 
