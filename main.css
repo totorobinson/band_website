@@ -9,7 +9,9 @@ body {
 /*https://www.youtube.com/watch?v=U-CujW5OlW0 for the gallery*/
 
 body {
-     background: url(pictures/fuzzy_lights.jpg) no-repeat center center fixed; 
+    background: url(pictures/fuzzy_lights.jpg) no-repeat center center fixed;
+
+
     background-size: cover;
 }
 
